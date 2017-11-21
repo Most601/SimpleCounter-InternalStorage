@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.most601.simplecounterinternalstorage.MainActivity">
+
+    <Button
+        android:id="@+id/count_buten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:text="Add 1 point"
+        android:onClick="onClickAddPointButton"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewPoints"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/count_buten"
+        android:layout_centerHorizontal="true"
+        android:text="Restart"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
